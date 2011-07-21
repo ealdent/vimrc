@@ -65,3 +65,6 @@ map <leader>d :NERDTreeToggle<cr>
 map <leader>df :NERDTreeFind<cr>
 let NERDTreeIgnore=['\~$','^target$','\.hi','\.o']
 let NERDTreeDirArrows=1
+
+" Ack
+map <leader>a :Ack<space>
