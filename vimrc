@@ -1,4 +1,5 @@
 set nocompatible
+let mapleader = ","
 
 if has("gui")
   " Setup pathogen
@@ -15,7 +16,8 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set list listchars=tab:\ \ ,trail:·
+set smarttab
+set list listchars=tab:▸\ ,eol:¬
 
 " Searching
 set hlsearch
@@ -48,5 +50,18 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 
+" Some key aliases
+nnoremap ; :
+map <Leader><space> :noh<CR>
+
 " Clojure
 let vimclojure#HighlightBuiltins = 1
+
+" Colorscheme
+color calmar256-dark
+
+" NERDTree
+map <leader>d :NERDTreeToggle<cr>
+map <leader>df :NERDTreeFind<cr>
+let NERDTreeIgnore=['\~$','^target$','\.hi','\.o']
+let NERDTreeDirArrows=1
