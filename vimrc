@@ -68,3 +68,9 @@ let NERDTreeDirArrows=1
 
 " Ack
 map <leader>a :Ack<space>
+
+" NERDCommenter
+let g:NERDCustomDelimiters = {
+      \ 'coffee': { 'left': '# ' },
+      \ 'ruby': { 'left': '# ' }
+      \ }
