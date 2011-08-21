@@ -58,6 +58,7 @@ map <Leader><space> :noh<CR>
 let vimclojure#HighlightBuiltins = 1
 
 " Colorscheme
+set t_Co=256
 color calmar256-dark
 
 " NERDTree
