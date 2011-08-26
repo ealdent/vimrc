@@ -25,3 +25,6 @@
 [submodule "bundle/vim-zoomwin"]
 	path = bundle/vim-zoomwin
 	url = https://github.com/rphillips/vim-zoomwin.git
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
